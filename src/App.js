@@ -1,11 +1,18 @@
+import { Route, Routes } from 'react-router-dom';
+
 import Login from "./components/Login";
+import Listado from "./components/Listado";
 
 function App() {
   return (
-    <div className="App">
-      <Login />
-    </div>
+    <>
+      <Routes>
+        <Route exact path='/' Component={Login} />
+        <Route path='/listado' Component={Listado} />
+      </Routes>
+    </>
   );
 }
 
 export default App;
+
