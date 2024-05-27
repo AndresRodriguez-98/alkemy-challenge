@@ -33,9 +33,9 @@ const Detalle = () => {
               <p>{movie.overview}</p>
               <h5>Rating: {movie.vote_average}</h5>
               <h5>Géneros:</h5>
-              <ul>
+{/*               <ul>
                 {movie.genres.map((oneGenre, id) => <li key={oneGenre.id}>{oneGenre.name}</li>)}
-              </ul>
+              </ul> */}
             </div>
           </div>
         </>
